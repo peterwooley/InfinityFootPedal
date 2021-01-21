@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "LaunchAtLogin",
+        "repositoryURL": "https://github.com/sindresorhus/LaunchAtLogin",
+        "state": {
+          "branch": null,
+          "revision": "0f39982b9d6993eef253b81219d3c39ba1e680f3",
+          "version": "4.0.0"
+        }
+      },
+      {
+        "package": "USBDeviceSwift",
+        "repositoryURL": "https://github.com/Arti3DPlayer/USBDeviceSwift.git",
+        "state": {
+          "branch": "master",
+          "revision": "3493f45868d676e3fe8cb996c35624b558ac7f9d",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

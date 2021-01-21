@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C4BBD9025B9FF13002CE46C /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 4C4BBD8F25B9FF13002CE46C /* LaunchAtLogin */; };
+		4C6F61C225BA11BF00C7FE82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F61B725BA11BF00C7FE82 /* Assets.xcassets */; };
+		4C6F61C325BA11BF00C7FE82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F61B925BA11BF00C7FE82 /* Preview Assets.xcassets */; };
+		4C6F61C425BA11BF00C7FE82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F61BA25BA11BF00C7FE82 /* Main.storyboard */; };
+		4C6F61C525BA11BF00C7FE82 /* Pedal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F61BD25BA11BF00C7FE82 /* Pedal.swift */; };
+		4C6F61C625BA11BF00C7FE82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F61BE25BA11BF00C7FE82 /* AppDelegate.swift */; };
+		4C6F61C725BA11BF00C7FE82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F61BF25BA11BF00C7FE82 /* ContentView.swift */; };
+		4C6F61C825BA11BF00C7FE82 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F61C025BA11BF00C7FE82 /* Button.swift */; };
+		4CC95A7625B8CC69000781DB /* USBDeviceSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4CC95A7525B8CC69000781DB /* USBDeviceSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		459A278D23AA910B003D50EC /* Infinity Foot Pedal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Infinity Foot Pedal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C6F61B725BA11BF00C7FE82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C6F61B925BA11BF00C7FE82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C6F61BB25BA11BF00C7FE82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C6F61BC25BA11BF00C7FE82 /* InfinityFootPedal.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = InfinityFootPedal.entitlements; sourceTree = "<group>"; };
+		4C6F61BD25BA11BF00C7FE82 /* Pedal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pedal.swift; sourceTree = "<group>"; };
+		4C6F61BE25BA11BF00C7FE82 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C6F61BF25BA11BF00C7FE82 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4C6F61C025BA11BF00C7FE82 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		4C6F61C125BA11BF00C7FE82 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		459A278A23AA910B003D50EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4BBD9025B9FF13002CE46C /* LaunchAtLogin in Frameworks */,
+				4CC95A7625B8CC69000781DB /* USBDeviceSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		459A278423AA910A003D50EC = {
+			isa = PBXGroup;
+			children = (
+				4C6F61B625BA11BF00C7FE82 /* InfinityFootPedal */,
+				459A278E23AA910B003D50EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		459A278E23AA910B003D50EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				459A278D23AA910B003D50EC /* Infinity Foot Pedal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C6F61B625BA11BF00C7FE82 /* InfinityFootPedal */ = {
+			isa = PBXGroup;
+			children = (
+				4C6F61B725BA11BF00C7FE82 /* Assets.xcassets */,
+				4C6F61B825BA11BF00C7FE82 /* Preview Content */,
+				4C6F61BA25BA11BF00C7FE82 /* Main.storyboard */,
+				4C6F61BC25BA11BF00C7FE82 /* InfinityFootPedal.entitlements */,
+				4C6F61BD25BA11BF00C7FE82 /* Pedal.swift */,
+				4C6F61BE25BA11BF00C7FE82 /* AppDelegate.swift */,
+				4C6F61BF25BA11BF00C7FE82 /* ContentView.swift */,
+				4C6F61C025BA11BF00C7FE82 /* Button.swift */,
+				4C6F61C125BA11BF00C7FE82 /* Info.plist */,
+			);
+			path = InfinityFootPedal;
+			sourceTree = "<group>";
+		};
+		4C6F61B825BA11BF00C7FE82 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4C6F61B925BA11BF00C7FE82 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		459A278C23AA910B003D50EC /* InfinityFootPedal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 459A27A023AA910B003D50EC /* Build configuration list for PBXNativeTarget "InfinityFootPedal" */;
+			buildPhases = (
+				459A278923AA910B003D50EC /* Sources */,
+				459A278A23AA910B003D50EC /* Frameworks */,
+				459A278B23AA910B003D50EC /* Resources */,
+				4C4BBD9225B9FF98002CE46C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InfinityFootPedal;
+			packageProductDependencies = (
+				4CC95A7525B8CC69000781DB /* USBDeviceSwift */,
+				4C4BBD8F25B9FF13002CE46C /* LaunchAtLogin */,
+			);
+			productName = SwiftUIMenuBar;
+			productReference = 459A278D23AA910B003D50EC /* Infinity Foot Pedal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		459A278523AA910A003D50EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = "Peter Wooley";
+				TargetAttributes = {
+					459A278C23AA910B003D50EC = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 459A278823AA910A003D50EC /* Build configuration list for PBXProject "InfinityFootPedal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 459A278423AA910A003D50EC;
+			packageReferences = (
+				4CC95A7425B8CC69000781DB /* XCRemoteSwiftPackageReference "USBDeviceSwift" */,
+				4C4BBD8E25B9FF13002CE46C /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+			);
+			productRefGroup = 459A278E23AA910B003D50EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				459A278C23AA910B003D50EC /* InfinityFootPedal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		459A278B23AA910B003D50EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6F61C425BA11BF00C7FE82 /* Main.storyboard in Resources */,
+				4C6F61C325BA11BF00C7FE82 /* Preview Assets.xcassets in Resources */,
+				4C6F61C225BA11BF00C7FE82 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C4BBD9225B9FF98002CE46C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/Resources/copy-helper-swiftpm.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		459A278923AA910B003D50EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6F61C625BA11BF00C7FE82 /* AppDelegate.swift in Sources */,
+				4C6F61C525BA11BF00C7FE82 /* Pedal.swift in Sources */,
+				4C6F61C725BA11BF00C7FE82 /* ContentView.swift in Sources */,
+				4C6F61C825BA11BF00C7FE82 /* Button.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C6F61BA25BA11BF00C7FE82 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C6F61BB25BA11BF00C7FE82 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		459A279E23AA910B003D50EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		459A279F23AA910B003D50EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		459A27A123AA910B003D50EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = InfinityFootPedal/InfinityFootPedal.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"InfinityFootPedal/Preview Content\"";
+				DEVELOPMENT_TEAM = ANY27A4PMF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = InfinityFootPedal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterwooley.InfinityFootPedal;
+				PRODUCT_NAME = "Infinity Foot Pedal";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		459A27A223AA910B003D50EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = InfinityFootPedal/InfinityFootPedal.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"InfinityFootPedal/Preview Content\"";
+				DEVELOPMENT_TEAM = ANY27A4PMF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = InfinityFootPedal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterwooley.InfinityFootPedal;
+				PRODUCT_NAME = "Infinity Foot Pedal";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		459A278823AA910A003D50EC /* Build configuration list for PBXProject "InfinityFootPedal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				459A279E23AA910B003D50EC /* Debug */,
+				459A279F23AA910B003D50EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		459A27A023AA910B003D50EC /* Build configuration list for PBXNativeTarget "InfinityFootPedal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				459A27A123AA910B003D50EC /* Debug */,
+				459A27A223AA910B003D50EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C4BBD8E25B9FF13002CE46C /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		4CC95A7425B8CC69000781DB /* XCRemoteSwiftPackageReference "USBDeviceSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Arti3DPlayer/USBDeviceSwift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C4BBD8F25B9FF13002CE46C /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C4BBD8E25B9FF13002CE46C /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
+		};
+		4CC95A7525B8CC69000781DB /* USBDeviceSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CC95A7425B8CC69000781DB /* XCRemoteSwiftPackageReference "USBDeviceSwift" */;
+			productName = USBDeviceSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 459A278523AA910A003D50EC /* Project object */;
+}
