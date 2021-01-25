@@ -48,7 +48,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.menu?.addItem(withTitle: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
             
         }
-
+        
         NSApp.activate(ignoringOtherApps: true)
     }
     

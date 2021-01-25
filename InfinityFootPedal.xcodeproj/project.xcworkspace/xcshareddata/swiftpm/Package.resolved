@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "ShortcutRecorder",
+        "repositoryURL": "git://github.com/Kentzo/ShortcutRecorder.git",
+        "state": {
+          "branch": null,
+          "revision": "07b065085e172d85b7b5a0f3cc05f6ed47ad5af1",
+          "version": "3.3.0"
+        }
+      },
+      {
         "package": "USBDeviceSwift",
         "repositoryURL": "https://github.com/Arti3DPlayer/USBDeviceSwift.git",
         "state": {

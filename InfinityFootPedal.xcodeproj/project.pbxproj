@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C403EBE25BA3B3C008BDBF7 /* ShortcutRecorder in Frameworks */ = {isa = PBXBuildFile; productRef = 4C403EBD25BA3B3C008BDBF7 /* ShortcutRecorder */; };
 		4C4BBD9025B9FF13002CE46C /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 4C4BBD8F25B9FF13002CE46C /* LaunchAtLogin */; };
 		4C6F61C225BA11BF00C7FE82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F61B725BA11BF00C7FE82 /* Assets.xcassets */; };
 		4C6F61C325BA11BF00C7FE82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6F61B925BA11BF00C7FE82 /* Preview Assets.xcassets */; };
@@ -37,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C4BBD9025B9FF13002CE46C /* LaunchAtLogin in Frameworks */,
+				4C403EBE25BA3B3C008BDBF7 /* ShortcutRecorder in Frameworks */,
 				4CC95A7625B8CC69000781DB /* USBDeviceSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +106,7 @@
 			packageProductDependencies = (
 				4CC95A7525B8CC69000781DB /* USBDeviceSwift */,
 				4C4BBD8F25B9FF13002CE46C /* LaunchAtLogin */,
+				4C403EBD25BA3B3C008BDBF7 /* ShortcutRecorder */,
 			);
 			productName = SwiftUIMenuBar;
 			productReference = 459A278D23AA910B003D50EC /* Infinity Foot Pedal.app */;
@@ -136,6 +139,7 @@
 			packageReferences = (
 				4CC95A7425B8CC69000781DB /* XCRemoteSwiftPackageReference "USBDeviceSwift" */,
 				4C4BBD8E25B9FF13002CE46C /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+				4C403EBC25BA3B3C008BDBF7 /* XCRemoteSwiftPackageReference "ShortcutRecorder" */,
 			);
 			productRefGroup = 459A278E23AA910B003D50EC /* Products */;
 			projectDirPath = "";
@@ -209,6 +213,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -270,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -323,6 +329,7 @@
 		459A27A123AA910B003D50EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = InfinityFootPedal/InfinityFootPedal.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -337,7 +344,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peterwooley.InfinityFootPedal;
 				PRODUCT_NAME = "Infinity Foot Pedal";
 				SWIFT_VERSION = 5.0;
@@ -347,6 +354,7 @@
 		459A27A223AA910B003D50EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = InfinityFootPedal/InfinityFootPedal.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -361,7 +369,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peterwooley.InfinityFootPedal;
 				PRODUCT_NAME = "Infinity Foot Pedal";
 				SWIFT_VERSION = 5.0;
@@ -392,6 +400,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4C403EBC25BA3B3C008BDBF7 /* XCRemoteSwiftPackageReference "ShortcutRecorder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git://github.com/Kentzo/ShortcutRecorder.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.3.0;
+			};
+		};
 		4C4BBD8E25B9FF13002CE46C /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
@@ -411,6 +427,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4C403EBD25BA3B3C008BDBF7 /* ShortcutRecorder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C403EBC25BA3B3C008BDBF7 /* XCRemoteSwiftPackageReference "ShortcutRecorder" */;
+			productName = ShortcutRecorder;
+		};
 		4C4BBD8F25B9FF13002CE46C /* LaunchAtLogin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4C4BBD8E25B9FF13002CE46C /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
