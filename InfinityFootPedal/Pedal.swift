@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 import USBDeviceSwift
 
 class Pedal: ObservableObject {
@@ -16,12 +17,14 @@ class Pedal: ObservableObject {
         ], reportSize: 64)
     
     let buttons:[Button]!
+    private var statusBarButton: NSStatusBarButton
     @Published var leftState:Bool = false
     @Published var middleState:Bool = false
     @Published var rightState:Bool = false
     @Published var connected:Bool = false
     
-    required init() {
+    required init(_ statusBarButton: NSStatusBarButton?) {
+        self.statusBarButton = statusBarButton!
         self.buttons = [
             Button(name:"Left", mask: 1, key:33),
             Button(name:"Middle", mask: 2, key:30),
@@ -43,6 +46,8 @@ class Pedal: ObservableObject {
         leftState = buttons[0].state
         middleState = buttons[1].state
         rightState = buttons[2].state
+
+        self.statusBarButton.image = NSImage(named: "Icon-" + String(data))
     }
     
     @objc func usbConnected(notification: NSNotification) {

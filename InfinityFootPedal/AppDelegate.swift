@@ -6,7 +6,7 @@
 //  Copyright © 2021 Peter Wooley. All rights reserved.
 //
 
-import Cocoa
+//import Cocoa
 import SwiftUI
 
 @NSApplicationMain
@@ -17,20 +17,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         checkAccess();
-    
-        self.pedal = Pedal()
-        
-        // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
-            .environmentObject(pedal)
 
-        // Create the popover
-        let popover = NSPopover()
-        popover.animates = false
-        popover.contentSize = NSSize(width: 200, height: 150)
-        popover.behavior = .transient
-        popover.contentViewController = NSHostingController(rootView: contentView)
-        self.popover = popover
+
         
         // Create the status item
         self.statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.squareLength))
@@ -38,7 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
         
         if let button = self.statusBarItem.button {
-            button.image = NSImage(named: "Icon")
+            button.image = NSImage(named: "Icon-0")
             button.action = #selector(togglePopover(_:))
             button.sendAction(on: [.leftMouseUp, .rightMouseUp])
             
@@ -48,6 +36,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.menu?.addItem(withTitle: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
             
         }
+        
+        self.pedal = Pedal(self.statusBarItem.button)
+        
+        // Create the SwiftUI view that provides the window contents.
+        let contentView = ContentView()
+            .environmentObject(pedal)
+        
+        // Create the popover
+        let popover = NSPopover()
+        popover.animates = false
+        popover.contentSize = NSSize(width: 200, height: 150)
+        popover.behavior = .transient
+        popover.contentViewController = NSHostingController(rootView: contentView)
+        self.popover = popover
         
         NSApp.activate(ignoringOtherApps: true)
     }
